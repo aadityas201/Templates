@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap" rel="stylesheet">
+
+    <title>BAnalyst - Business Solutions</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <section id="header">
+        <div class="header-left">
+            <img src="./Images/BANAlYST (1).png" class="logo" alt="logo">
+        </div>
+        <div class="header-right">
+            <img src="./Images/Background.svg">
+        </div>
+    </section>
+    <nav id = "sideNav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Offer</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <img src="./Images/248919.png" id="menuBtn">
+
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="about-left">
+            <img src="./Images/About Us.svg">
+        </div>
+        <div class="about-right">
+            <div class="about-text">
+                <h1>About us</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus odit vitae recusandae nobis ullam? Accusamus assumenda minus esse excepturi error ipsum corporis repellat commodi vel sit, saepe rem labore mollitia?</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Features Seaction -->
+    <section id = "features">
+        <div class="feature-row">
+            <div class="feature-col">
+                <img src="./Images/undraw_real_time_sync_re_nky7.svg" alt="">
+                <h4>Learn from Anywhere</h4>
+                <p>Switch between your computer, tablet or mobile device</p>
+            </div>
+            <div class="feature-col">
+                <img src="./Images/undraw_teacher_re_sico.svg" alt="">
+                <h4>World Class Faculty</h4>
+                <p>Learn From the best teachers from all over the world</p>
+            </div>
+            <div class="feature-col">
+                <img src="./Images/undraw_online_learning_re_qw08.svg">
+                <h4>Online Learning</h4>
+                <p>Learn from anywhere in the world with the internet access</p>
+            </div>
+            <div class="feature-btn">
+                <button class="common-btn">Start Free trial</button>
+            </div>
+        </div>    
+    </section>
+    
+    <section id="courses">
+        <div class="course-row">
+            <div class="course-left-col">
+                <div class="course-text">
+                    <h1>Browse Our top<br>Courses<br></h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus odit vitae recusandae nobis ullam? Accusamus assumenda minus esse excepturi error ipsum corporis repellat commodi vel sit, saepe rem labore mollitia?</p>
+                    
+                </div>
+                <div class="course-btn">
+                    <button class="common-btn">View Courses</button>
+                </div>
+
+            </div>
+            <div class="course-right-col">
+                <img src="./Images/undraw_books_re_8gea.svg" alt="courses">
+            </div>
+        </div>
+    </section>
+
+    <section id="offers">
+        <div class="about-left">
+            <img src="./Images/undraw_discount_d-4-bd.svg">
+        </div>
+        <div class="about-right">
+            <div class="about-text">
+                <h1>Special Offers</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus odit vitae recusandae nobis ullam? Accusamus assumenda minus esse excepturi error ipsum corporis repellat commodi vel sit, saepe rem labore mollitia?</p>
+            </div>
+        </div>
+    </section>
+
+    <section id = "contact">
+        <div class="container contact-row">
+            <div class="contact-left-col">
+                <div class="contact-text">
+                    <h1>Sign Up to join<br>
+                        Our Online Community<br></h1>
+                    <form>
+                        <input type="text" placeholder="Enter Your Name">
+                        <input type="email" placeholder="Enter Your Email">
+                        <input type="password" placeholder="Enter Your password">
+                    </form>
+                    <div class="contact-btns">
+                        <button class="common-btn">Sign Up</button>
+                        <button class="common-btn">Start Free Trial</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="contact-right-col">
+                <img src="./Images/Contact Us.svg">
+            </div>
+        </div>
+    </section>
+    <section id="footer">
+        <div class="container">
+            <hr>
+        </div>
+    </section>
+
+
+    <script>
+        const menuBtn = document.getElementById("menuBtn")
+        const  sideNav = document.getElementById("sideNav")
+        
+        sideNav.style.right = "-250px";
+        menuBtn.onclick = () => {
+            if(sideNav.style.right === "-250px"){
+                sideNav.style.right = "0";
+            }
+            else{
+                sideNav.style.right = "-250px";
+            }
+
+        }
+    </script>
+</body>
+</html>
